@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+.component .Nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(18, 16, 34);
+  color: white;
+}
+.component .Nav .imgItem .img{
+  width: 100px;
+  height: 100px;
+}
+.component .Nav .rightNav {
+  margin-right: 50px;
+}
+#root{
+  height: 100vh;
+  background-image: url("../reactt.jpeg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 75%;
+}
+.List{
+  display: flex;
+  padding: 50px;
+
+}
+ul li{
+  list-style: none;
+}
+.App-header h1, ul li{
+  padding: 20px;
+  color: white;
+}
+ul
+  {
+  list-style-type: circle;
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(66, 222, 225); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
